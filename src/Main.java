@@ -19,7 +19,7 @@ public class Main {
             }
             if (o.isAnnotationPresent(BeforeSuite.class)) {
                 if (beforeMethod == null) beforeMethod = o;
-                else throw new RuntimeException("Больше одного метода с аннотаци BeforeSuite");
+                else throw new RuntimeException("Больше одного метода с аннотацией BeforeSuite");
             }
             if (o.isAnnotationPresent(AfterSuite.class)) {
                 if (afterMethod == null) afterMethod = o;
